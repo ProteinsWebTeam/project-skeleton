@@ -573,7 +573,7 @@ def get_hmm_matrix(logo, alisqfrom, alisqto, hmmfrom, hmmto, seqmotif, modelmoti
                 count += 1
             elif modelmotif[res] == '.':
                 pos += 1
-                matrix[pos] = f"-1_None_0"
+                matrix[pos] = f"-1__0"
             else:
                 logo_score = logo[count]
                 seq_res = seqmotif[res]
