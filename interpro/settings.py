@@ -44,6 +44,8 @@ SECRET_KEY = "#*-7w_j1le-j(_#=g4ii!knr&w5!9ocpw*#7hq9+_osc5@19vs"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = INTERPRO_CONFIG.get("debug", False)
 
+MINOR_VERSION = INTERPRO_CONFIG.get("minor_version", 0)
+
 ALLOWED_HOSTS = INTERPRO_CONFIG.get("allowed_host", [])
 
 import django_redis.cache

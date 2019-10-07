@@ -36,6 +36,7 @@ class Response(R):
             headers["Server-Timing"] = ",".join(timings)
 
         headers["InterPro-Version"] = Database.objects.get(pk="interpro").version
+        headers["InterPro-Version-Minor"] = settings.MINOR_VERSION
 
         super(Response, self).__init__(
             data, status, template_name, headers, exception, content_type

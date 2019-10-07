@@ -55,6 +55,9 @@ class InterProCache:
                     "headers": {
                         "Content-Type": response.get("Content-Type", ""),
                         "InterPro-Version": response.get("InterPro-Version", ""),
+                        "InterPro-Version-Minor": response.get(
+                            "InterPro-Version-Minor", ""
+                        ),
                         "Server-Timing": response.get("Server-Timing", ""),
                         "Cached": "true",
                     },
